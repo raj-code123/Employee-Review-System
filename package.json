@@ -1,0 +1,27 @@
+{
+  "name": "employee-review-system",
+  "version": "1.0.0",
+  "description": "This Employee review web application is created for employees to submit feedback toward each other's performance.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raj-code123/Employee-Review-System.git"
+  },
+  "keywords": [
+    "employees"
+  ],
+  "author": "raj Dudhatra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raj-code123/Employee-Review-System/issues"
+  },
+  "homepage": "https://github.com/raj-code123/Employee-Review-System#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
