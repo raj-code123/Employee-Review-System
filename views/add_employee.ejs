@@ -1,0 +1,74 @@
+<% if(locals.user && locals.user.role === 'admin') {%>
+    <div class="main-container">
+      <div class="outer_div">
+        <div class="main_head">
+          <h3 style="font-weight: bold;">Enter Employee Details</h3>
+        </div>
+        <form class="form" action="/create-employee" method="POST">
+    
+        <!-- Username input -->
+        <div class="form-control">
+          <label class="form-label" for="username"></label>
+          <input
+            type="text"
+            id="name"
+            name="username"
+            class="login-form-input"
+            placeholder="Username"
+            required
+          />
+        </div>
+    
+        <!-- Email input -->
+        <div class="form-control">
+          <label class="form-label" for="email"></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="login-form-input"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+    
+        <!-- Password input -->
+        <div class="form-control">
+          <label class="form-label" for="password"></label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            class="login-form-input"
+            placeholder="Password"
+            required
+          />
+        </div>
+    
+        <!-- Confirm password input -->
+        <div class="form-control">
+          <label class="form-label" for="confirm_password"></label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            class="login-form-input"
+            placeholder="Confirm Password"
+            required
+          />
+        </div>
+    
+        <div class="my-3 d-flex justify-content-between">
+    
+          <!-- Cancel button -->
+          <a href="/admin-dashboard" class="login-button" style="margin-left:15px">CANCEL</a>
+          
+          <!-- Add button -->
+          <button type="submit" class="login-button" 
+          style="margin-left: 30px;
+          margin-right: 15px;">ADD</button>
+      </div>
+        </form>
+    </div>
+  </div>
+    <%} %>

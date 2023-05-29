@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+.main-container{
+    max-width: 500px;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .outer_div{
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        width: 100%;
+        padding: 0 0 30px;
+        .main_head{
+            margin-bottom: 20px;
+            background-color: #549DF7;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+        .sign_up{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h5{
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+        }
+        .form{
+            width: 100%;
+            input{
+                width: 100%;
+                padding: 6px;
+                line-height: 1;
+            }
+            .form-control{
+                position: relative;
+                padding: 0 15px;
+                border: none;
+                
+                label{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    right: 0;
+                    margin-bottom: 0;
+                    opacity: 0;
+                    visibility: hidden;
+                    z-index: 0;
+                }
+                .login-form-input{
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+            .login-btn{
+                display: block;
+                padding: 0 15px;
+                margin-bottom: 30px;
+                
+            }
+            .login-button{
+                padding: 5px 15px;
+                background-color: RGB(84,157,247);
+                transition: all 0.5s ease;
+                border:1px solid #000;
+                &:hover{
+                    background-color: rgba(84,157,247,.8);
+                    color:#fff;
+                }
+            }
+        }
+    }
+}

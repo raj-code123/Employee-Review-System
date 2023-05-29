@@ -1,0 +1,93 @@
+<div class="main-container">
+  <div class="outer_div">
+    <div class="main_head">
+      <h3 class="heading">Sign Up</h3>
+    </div>
+  
+    <form class="form" action="/create" method="POST">
+  
+      <!-- Username input -->
+      <div class="form-control my-3">
+        <label class="form-label" for="username"></label>
+        <input
+          type="text"
+          id="name"
+          name="username"
+          class="login-form-input"
+          placeholder="Enter User name"
+          required
+        />
+      </div>
+  
+      <!-- Email input -->
+      <div class="form-control my-3">
+        <label class="form-label" for="email"></label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="login-form-input"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+  
+      <!-- Password input -->
+      <div class="form-control my-3">
+        <label class="form-label" for="password"></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="login-form-input"
+          placeholder="Password"
+          required
+        />
+      </div>
+  
+      <!-- Confirm password input -->
+      <div class="form-control my-3">
+        <label class="form-label" for="confirm_password"></label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          class="login-form-input"
+          placeholder="Confirm Password"
+          required
+        />
+      </div>
+  
+      <!-- User role input -->
+      <div class="form-control my-3">
+        <label class="form-label" for="role"></label>
+        <input type="text" class="login-form-input" placeholder="Select Role"/>
+        <select
+          class="login-form-input"
+          id="role"
+          name="role"
+          aria-label="Default select example"
+          required
+        >
+          <option selected value="employee">Employee</option>
+          <option value="admin">Admin</option>
+        </select>
+      </div>
+  
+      <!-- Buttons container -->
+      <div class="login-btn">
+        <!-- signup button -->
+        <button type="submit" class="login-button">SIGN UP</button>
+        <!-- google signup button button -->
+      </div>
+  
+      <!-- Link to redierct to login page -->
+    </form>
+    <div class="sign_up">
+      <h5 class="bottom-heading">Already have an Account?</h5> 
+      <div class="bottom-style">
+        <a href="/" class="login-button">Login</a>
+      </div>
+    </div>
+  </div>
+ </div> 

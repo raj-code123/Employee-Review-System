@@ -1,0 +1,39 @@
+
+<div class="main-container">
+  <div class="outer_div">
+    <div class="main_head">
+      <h3 class="heading">Login</h3>
+    </div>
+    <form method="POST" action="/create-session" class="form">
+  
+      <!-- Email input -->
+      <div class="form-control my-3">
+        <label for="email"></label>
+        <input type="email" id="email" name="email" class="login-form-input" placeholder="Enter email" />
+      </div>
+  
+      <!-- Password input -->
+      <div class="form-control my-3">
+        <label for="password"></label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="login-form-input" 
+          placeholder="Password"
+        />
+      </div>
+  
+      <div class="login-btn">
+        <!-- Login button -->
+        <button type="submit" class="login-button">LOGIN</button>
+      </div>
+      
+    </form>
+    <!-- Link to redirect to signup page -->
+    <div class="sign_up">
+      <h5>Don't have an Account?</h5>
+        <a href="/sign-up" class="login-button" id="sign-up">Sign Up</a>
+    </div>
+  </div>
+  </div>
