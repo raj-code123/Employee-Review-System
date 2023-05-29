@@ -5,7 +5,7 @@ mongoose.connect(MONGODB_URL,{
     useNewUrlParser: true,
     useUnifiedTopology: true
   });
-
+console.log(MONGODB_URL);
 const db = mongoose.connection;
 
 db.on('error', console.error.bind(console, "Error connecting to MongoDB"))
